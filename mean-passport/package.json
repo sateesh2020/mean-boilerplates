@@ -1,0 +1,26 @@
+{
+  "name": "assesment-app",
+  "version": "1.0.0",
+  "description": "An App for Assesments using Express, Mongoose, Passport",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "keywords": [
+    "Assesment",
+    "Dataphobia",
+    "Passport Authentication",
+    "MEAN"
+  ],
+  "author": "Satheesh Valluru",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.13.1",
+    "bson": "^0.4.1",
+    "express": "^4.12.4",
+    "mongoose": "^4.0.5",
+    "morgan": "^1.6.0",
+    "passport": "^0.2.2",
+    "passport-local": "^1.0.0"
+  }
+}

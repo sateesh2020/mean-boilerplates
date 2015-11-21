@@ -1,0 +1,42 @@
+.navbar-brand{
+    height: auto !important;
+    padding: 5px 5px !important;
+}
+.navbar.custom-navbar ul.nav{
+    padding: 10px 0px;
+}
+.navbar.custom-navbar .navbar-nav>li.active>a,
+.navbar.custom-navbar .navbar-nav>li>a:hover,
+.navbar.custom-navbar .navbar-nav>li>a:focus{
+   background-color: transparent;
+   border-bottom: 2px solid #333;
+}
+.navbar.custom-navbar.shrink .navbar-brand img{
+    width:80%;
+}
+.navbar.custom-navbar.shrink ul.nav{
+    padding: 0px;
+}
+.content-wrapper{
+    margin-top: 80px;
+}
+.questionare-container{
+    height: 635px;
+    overflow-y: scroll;
+    margin: auto;
+    padding: 10px;
+}
+.answers .list-group-item{
+    padding: 5px 15px;
+}
+.user-profile-sec{
+  background-color: #333;
+  min-height: 580px;
+  height: 89vh;
+  max-height: 800px;
+}
+.courses-sec{
+  background-color: #F9F9F9;
+  min-height: 580px;
+  height: 89vh;
+}

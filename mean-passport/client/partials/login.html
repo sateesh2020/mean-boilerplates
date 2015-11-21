@@ -1,0 +1,44 @@
+<div class="login-container login" ng-controller="LoginController">
+    <!-- BEGIN LOGO -->
+    <div class="logo"><img src="img/login-logo.png" width="277" height="208" class="img-responsive">
+    </div>
+    <!-- END LOGO -->
+    <div class="content">
+        <!-- BEGIN LOGIN FORM -->
+        <form class="form-vertical login-form" action="" method="post">
+            <h3 class="form-title">Login to your account</h3>
+            <div class="alert alert-error alert-warning" ng-class="{hide:userValid}">
+                <button class="close" data-dismiss="alert"></button><span>User Not Exists</span>
+            </div>
+            <div class="control-group">
+                <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                <label class="control-label visible-ie8 visible-ie9">Username</label>
+                <div class="input-group"><span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                    <input ng-model="userName" type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label visible-ie8 visible-ie9">Password</label>
+                <div class="input-group"><span class="input-group-addon" id="basic-addon2"><i class="fa fa-lock"></i></span>
+                    <input ng-model="password" type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon2">
+                </div>
+            </div>
+            <div class="form-actions">
+                <label class="checkbox">
+                    <input type="checkbox" name="remember" value="1" /> Remember me</label>
+                <button type="button" ng-click="signIn(userName,password)" class="btn blue pull-right">Login <i class="m-icon-swapright m-icon-white"></i>
+                </button>
+            </div>
+            <div class="forget-password">
+                <h4>Forgot your password ?</h4>
+                <p>no worries, click <a href="javascript:;" id="forget-password">here</a>to reset your password.</p>
+            </div>
+            <div class="create-account">
+                <p>Don't have an account yet ?&nbsp; <a href="javascript:;" id="register-btn">Create an account</a>
+                </p>
+            </div>
+        </form>
+        <!-- END LOGIN FORM -->
+    </div>
+    <!-- END LOGIN -->
+</div>

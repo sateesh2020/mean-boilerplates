@@ -1,0 +1,11 @@
+<div class="panel-heading">Q. {{question}}</div>
+<div class="panel-body">
+    <ul class="list-group answers">
+        <li class="list-group-item" ng-repeat="answer in answers">
+            <div class="radio">
+                <label>
+                    <input type="radio" name=question{{$index}}> {{answer}} </label>
+            </div>
+        </li>
+    </ul>
+</div>
